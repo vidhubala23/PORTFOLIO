@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vidhubala</title>
+    <link rel="stylesheet" href="project.css">
+</head> 
+<body>
+    <!-------------------------- Header Area -------------------------->
+    <header id="header-area">
+        <div class="hamburger"><i class="fa fa-bars" onclick="changeicon(this)"></i></div> 
+        <div class="lists">
+        <span><a href="#Home">Home</a></span>
+        <span><a href="#Education">Education</a></span>
+        <span><a href="#Skills">Skills</a></span>
+        <span><a href="#Project-Papers">Project and Papers</a></span>
+        <span><a href="#Extra-content">Extra-curricular Activities</a></span>
+        </div>
+    </header>
+    <!-------------------------- Home Page -------------------------->
+    <section class="Home-content" id="Home">
+    <div class="FirstElement">
+        <div class="profile-text">
+            <h5>Hi I'm </h5><br>
+            <h1>VIDHUBALA S</h1><br>
+            <p>Welcome to my portfolio website! I am a passionate and aspiring software engineer dedicated to crafting innovative solutions and advancing the boundaries of technology. With a strong commitment to excellence, I continuously seek out new challenges and opportunities to enhance my skills in this ever-evolving field.
+                Eager to contribute creativity and bring  innovative ideas to life.</p> 
+                <div class="btn-group">
+                    <a href="VIDHUBALA-RESUME.pdf" class="btn" target="_blank">Download Resume</a>
+                </div>
+        </div>
+        <div class="profile-photo">
+                    <img src="Photo.jpeg" alt="profile picture">
+        </div>
+    </div>
+    </section>
+    <!------------------------- Education ------------------------------->
+    <section class="Education-content"  id="Education">
+        <h3 id="Education-title">Education</h3>
+        <div id="edu-container">
+            <div class="econtainer">
+               <p class="econtainer_p">B.E-EEE-87.6%</p>
+               <p class="econtainer_p">Bannari Amman Institute of Technology</p>
+               <p class="econtainer_p">2021-2025</p>
+            </div>
+            <div class="econtainer">
+                <p class="econtainer_p">HSC-93.3%</p>
+                <p class="econtainer_p">Sri Shanmuka Matric Higher Secondary School</p>
+                <p class="econtainer_p">2020-2021</p>
+            </div>
+            <div class="econtainer">
+                <p class="econtainer_p"> SSLC-93.2%</p>
+                <p class="econtainer_p"> St.Joseph Matric High School</p>
+                <p class="econtainer_p"> 2019-2020</p>
+            </div>
+            </div>
+        </div>
+     </section>
+     <!-------------------------- Skills -------------------------->
+     <section class="Skills-content" id="Skills">
+        <h3 id="skill-title">Skills</h3>
+        <div class="skills-container">
+        <div id="inner-skills-container">
+                <div class="skill-items">
+                   <img class="skill-pic" src="C.png">
+                   <div>C</div>
+                </div>
+                <div class="skill-items">
+                   <img class="skill-pic" src="CPP.png">
+                   <div>C++</div>
+                </div>
+                <div class="skill-items">
+                    <img class="skill-pic" src="sql.png">
+                    <div>SQL</div>
+                </div>
+                <div class="skill-items">
+                   <img class="skill-pic" src="HTML.png">
+                   <div>HTML</div>
+                </div>
+                <div class="skill-items">
+                    <img  class="skill-pic" src="CSS.png">
+                    <div>CSS</div>
+                </div>
+                <div class="skill-items">
+                    <img class="skill-pic" src="js.png">
+                    <div>JavaScript</div>
+               </div>
+              
+        </div>
+        </div>
+    </section>
+        <!-------------------------- Projects and Papers -------------------------->
+    <section class="Project & paper-content" id="Project-Papers">
+        <h3 id="project-title">Project and Papers</h3>
+        <div class="pcontainer">
+            <div class="card" >
+                <div class="content" id="pfirst">
+                <h3>Word Scramble Game</h3>
+                <p> The Word Scramble Game is an engaging and interactive web-based game that challenges players to rearrange scrambled letters to form meaningful words.It combines fun and learning, enhancing vocabulary and problem-solving skills.</p>
+                <div onclick="morefunc(0)" class="more">Read More</div>
+                <p  class="moreinner">It is built using HTML, CSS, and JavaScript, featuring a user-friendly interface and real-time validation. 
+                <br>
+                <span onclick="lessfunc(0)" class="less">Read Less</span>
+                </p>
+                </div>
+            </div>
+            <div class="card"  >
+                <div class="content" id="psecond" >
+                <h3>Portfolio Website</h3>
+                <p>Designed a  portfolio website to display my skills,projects  and  achievements. This  website serves as a digital showcase of my work.Through this platform, I aim to demonstrate my enthusiasm and dedication to the field.</p>
+                <div onclick="morefunc(1)" class="more"> Read More</div>
+                <p class="moreinner">It utilizes HTML for structure,CSS for styling and Javascript for interactive elements, creating dynamic
+                and visually appealing user experience.<br>
+                <span onclick="lessfunc(1)" class="less">Read Less</span>
+                </p>
+               </div>
+            </div>` 
+            <div class="card"  >
+                <div class="content" id="pthird" >
+                <h3>Semiconductor Devices</h3>
+                <p>Presented a paper titled "Semiconductor Devices" at Kongu College of Engineering, exploring semiconductor materials in modern electronics and emphasizing their role in enhancing performance and efficiency.
+                </p>
+                <div onclick="morefunc(2)" class="more">Read More</div> 
+                <p class="moreinner">Examined the latest advancements in semiconductor technology and their implications for future electronic devices.
+                <br>
+                <span onclick="lessfunc(2)" class="less">Read Less</span>
+                </p>
+                </div>
+            </div>
+         </div>
+    </section>
+          <!-------------------------- Extra-curricular Activities -------------------------->
+    <section class="Extra-content" id="Extra-content">
+        <div id="chess-title">
+            <h4>Extra-curricular Activities</h4>
+            <p>Chess is a game of infinite possibilities, and that's what makes it so fascinating</p>
+        </div>
+        <div class="chess-content">
+                <div class="chess-image">
+                <img id="chess-pic" src="chess.jpg">
+                </div>
+                <div id="chess-text">
+                    <div class="chess-inner-text">
+                    <p id="first">Secured second position in chess tournament in Anna 
+                      University Zonal tournament</p>
+                    <br>
+                    </div>
+                    <div   class="chess-inner-text">
+                    <p id="second">Secured Runner position in chess in 27th Annual sports 
+                    day in Bannari Amman Institute of Technology.</p>
+                    </div>
+                </div> 
+        </div>
+    </section>
+    <!-------------------------- Javascript  section -------------------------->
+    <script src="project.js"></script>
+    <!-------------------------- Footer section -------------------------->
+    
+    <section  id="footer-content">
+        <footer class="footer">
+        <small class="message">Thanks for visiting my Website!</small> 
+        </footer>
+    </section>
+</body>
+</html> 

@@ -1,0 +1,434 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  color:#070606;
+  font-family:Georgia;
+  font-weight:bold;
+}
+a{
+  text-decoration: none ;
+}
+img{
+  max-width: 100%;
+}
+body{
+  line-height: 25px;
+  background-color: #c29774;
+}
+.container{
+  width: 1170px;
+  margin:auto;
+}
+      /*---------------------------Header---------------------------*/
+.hamburger{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top:20px;
+}
+.lists{
+     display:flex;
+     justify-content:flex-end;
+     margin-top:20px;
+     margin-right:60px;
+}
+span{
+    padding:9px;
+} 
+a:hover {
+  padding-bottom:10px;
+  border-bottom: 2px solid #a80c0c;
+  color:white;
+}
+/*---------------------------HomePage--------------------------*/
+.FirstElement{
+   display:flex;
+   justify-content:left;
+   align-items: center;
+   padding-top:100px;
+   margin-left:150px;
+} 
+.FirstElement .profile-photo{
+  width: 300px;
+  height:  300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 15px solid #444444; 
+}
+profile-photo .img{
+  height: 100%;
+  width: 100%;
+}
+.profile-text{
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  float:left;
+  margin-right: 50px;
+}
+.profile-text h5{
+  color: #0f0e0e;
+  font-size: 14px;
+}
+.profile-text h1{
+  color: #a80c0cd2;
+  font-size: 50px; 
+  line-height: 1.1;
+}
+.profile-text p{
+  color:#0a0909;
+  text-align: justify;
+}
+/*---------------------------Button---------------------------*/
+.btn-group{
+  margin: 45px 0;
+}
+.btn-group .btn{
+  color: #fff;
+  background-color: #333;
+  padding:12px 25px;
+  margin: 5px 0;
+  margin-right: 7px;
+  border-radius: 30px;
+  border: 2px solid #181616;
+}
+/*---------------------------Education ---------------------------*/
+#Education-title{
+  padding:100px 0px 20px 0px;
+  text-align:center;
+  color:#a80c0cd2;
+  font-weight: 300px;
+  font-size:35px;
+}
+#edu-container{
+  display:flex;
+  flex-direction: column;
+  padding-left:25px;
+  margin:20px 400px 0px 400px;
+  border-left: 2px solid black;
+  height:400px;
+}
+.econtainer{
+  background-color:#a80c0cd2;;
+  margin-bottom:20px;
+}
+.econtainer_p{
+  position: relative;
+  top:-10px;
+  margin:10px;
+  opacity:0;
+  transition:all 1s; 
+  transform: translateX(300px); 
+} 
+.educationanimation{
+  opacity:1;
+  transform: translateX(0px); 
+}
+.econtainer::before{
+  content:'';
+  display: block;
+  height:15px;
+  width:15px;
+  border-radius:50%;
+  background-color: black;
+  position: relative;
+  left:-34px; 
+}
+/*---------------------------Skills---------------------------*/
+.skill-items.left {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+.skill-items.right {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(100%);
+}
+.skill-items.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+#Skills{
+   margin-top:70px;
+}
+#skill-title{
+    padding-top:60px;
+    text-align:center;
+    color:#a80c0cd2;
+    font-weight: 300px;
+    font-size:35px;
+}
+.skills-container{
+   padding:15px 9%;
+   margin-top:20px;
+}
+#inner-skills-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); /* This ensures exactly 3 columns per row */
+    gap:30px;
+    margin: 20px 200px;
+}
+.skill-items{
+  background-color:#a80c0cd2;
+    text-align: center;
+    font-size: 25px;
+    border-radius:5px;
+    padding:20px 20px; 
+}
+.skill-pic{
+   height:100px;
+   width:100px;
+   margin:10px;
+}
+/*---------------------------Projects---------------------------*/
+#Project-Papers{
+  margin-bottom:100px;
+}
+#project-title{
+   padding-top:60px;
+    text-align:center;
+    color:#a80c0cd2;
+    font-weight: 300px;
+    font-size:35px;
+}
+.pcontainer{
+  display:flex;
+  gap:5px;
+  margin:40px 90px 0px 90px;
+}
+.content{
+  background-color:#a80c0cd2;
+  padding:20px;
+  text-align: justify;
+  width:300px;
+  margin:20px 40px;
+  transition: transform 0.4s;
+}
+.content.active {
+  transform: scale(1.05);
+  z-index: 20; 
+}
+.content h3{
+   text-align:center;
+}
+.content p{
+    padding-top:5px;
+}
+.more,.less{
+  padding: 20px;
+  background-color:#c29774;
+  display: block; 
+  color: white;
+  border:1px solid black;
+  margin:10px;
+  text-align: center;
+}
+.more:hover,.less:hover{
+   background-color:black;
+   text-align: center;
+}
+.moreinner{
+  display:none;
+}
+/*---------------------------Extra-curricular activities---------------------------*/
+.chess-content{
+    height:300px;
+    position:relative;
+    left:300px;
+    width:800px;
+    background-color: #a80c0c;
+    opacity:0;
+    transition:all 1s; 
+    transform: translateY(100px); 
+}
+.chessanimation{
+  opacity:1;
+  transform: translateY(0px); 
+}
+#chess-pic{
+       height:250px;
+        width:300px;
+        margin:25px;
+        float:left;
+}
+.chess-inner-text{
+  position:relative;
+  left:60px;
+  text-align:left;
+  top:50px;
+  width:700px;
+}
+#chess-text p{
+  font-size: 18px;
+  text-align: justify;
+}
+#chess-title{
+  margin-bottom: 60px;
+  text-align: center;
+}
+#chess-title h4{
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  color:#a80c0cd2;
+  margin-bottom: 20px;
+}
+#chess-title p{
+  color: #140c0c;
+  font-family: Lucida Calligraphy;
+  
+}
+/*---------------------------Footer---------------------------*/
+.footer {
+    max-width: 950px;
+    margin:auto;
+    padding:50px 0 26px;
+    text-align: center;
+  }
+  .message {
+    font-size: 20px;
+    color: rgba(26, 23, 23, 0.4);
+    margin-bottom: 10px;
+  }
+ /*------------------- Responsive Design on small screen -------------------*/
+
+/* Medium layout */
+@media only screen and (min-width:1000px) and (max-width:1200px){
+  .container{
+    width: 970px;  
+  }
+  #edu-container{
+    margin:20px 350px 0px 350px;
+   
+  }
+  .FirstElement .profile-photo{
+    width:150px;
+    height:150px;
+    position: relative;
+    top:-50px;
+  }
+}
+@media(max-width:1050px){
+  .FirstElement{ 
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .profile-text{
+    padding: 40px 0px;
+  }
+  .chess-image{
+    width:400px;
+  }
+  .chess-content{
+    width:400px;
+    height:100%;
+    left:230px;
+  }
+  .chess-inner-text{
+    width:50%;
+    top:0;
+  }
+  .chess-content{
+    left:200px;
+   }  
+  #edu-container{
+    margin:20px 300px 0px 300px;
+  }
+}
+/* tablet layout */
+@media only screen and (min-width:768px) and (max-width:999px){
+  .container{
+    width: 750px;
+  } 
+  #edu-container{
+    margin:20px 200px 0px 200px;
+  }
+  .content{
+    margin-left:25px;
+  } 
+  .pcontainer{
+    justify-content: center;
+   }
+   #inner-skills-container{
+    justify-content:center;
+   }
+  .chess-content{
+   width:350px;
+   height:100%;
+   margin-left:120px;
+  }
+}
+/* Mobile Layout */
+@media only screen and (max-width:767px){
+  .fa-times #hamburger{
+    position: fixed;
+    display: block;
+  }
+  .pcontainer{
+   width:200px;
+  }
+  .header ul{
+    display: none;
+  }
+  .header i{
+    color: #110d0d;
+  }
+  #inner-skills-container{
+    justify-content:center;
+    gap:10px;
+}
+  .FirstElement .profile-text p{
+    text-align: justify;
+  }
+  .container{
+    width: 350px;
+  }
+  .project{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .chess-image{
+    width:400px;
+  }
+  .chess-content{
+    width:350px;
+    height:100%;
+    left:80px;
+  }
+  .chess-inner-text{
+    width:50%;
+    top:0;
+  }
+  #edu-container{
+    margin:20px 100px 0px 100px;
+  }
+ .econtainer_p{
+  opacity:0;
+  transition:all 1s; 
+  transform: translateX(200px); 
+  } 
+  #edu-container{
+  height:27em;
+  }
+  .educationanimation{
+  opacity:1;
+  transform: translateX(0px); 
+  }
+  .hamburger{
+  display:block;
+  position: relative;
+  left:50px;
+  }
+  .lists{
+   display:none;
+  }
+  .header-lists{
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  left:50px;
+  background-color:wheat;
+}
+}
